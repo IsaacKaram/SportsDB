@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeaguesViewController" customModule="SportsDB" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="LeaguesViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Search League" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hng-zL-phf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <color key="barTintColor" name="ViewBackgoundColor"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-bR-VDO">
+                    <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" name="ViewBackgoundColor"/>
+            <constraints>
+                <constraint firstItem="bfP-bR-VDO" firstAttribute="top" secondItem="Hng-zL-phf" secondAttribute="bottom" id="2Mj-hQ-ZkH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bfP-bR-VDO" secondAttribute="bottom" id="3iy-rz-mXp"/>
+                <constraint firstItem="Hng-zL-phf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Apj-9u-VSL"/>
+                <constraint firstItem="bfP-bR-VDO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Bb7-0w-pfX"/>
+                <constraint firstItem="Hng-zL-phf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="STG-t9-VJX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bfP-bR-VDO" secondAttribute="trailing" id="Siz-r3-evk"/>
+                <constraint firstItem="Hng-zL-phf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yo1-79-9kn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="125"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ViewBackgoundColor">
+            <color red="0.96100002527236938" green="0.9649999737739563" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
