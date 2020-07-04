@@ -25,6 +25,7 @@
 		CE1B79E324B0179C008B4825 /* LeaguesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B79E224B0179C008B4825 /* LeaguesResponse.swift */; };
 		CE1B79E624B01865008B4825 /* LeaguesNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B79E524B01865008B4825 /* LeaguesNetworking.swift */; };
 		CE1B79E824B01B25008B4825 /* LeaguesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B79E724B01B25008B4825 /* LeaguesAPI.swift */; };
+		CE1B79EA24B04435008B4825 /* LeagueDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B79E924B04435008B4825 /* LeagueDetailsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CE1B79E224B0179C008B4825 /* LeaguesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesResponse.swift; sourceTree = "<group>"; };
 		CE1B79E524B01865008B4825 /* LeaguesNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesNetworking.swift; sourceTree = "<group>"; };
 		CE1B79E724B01B25008B4825 /* LeaguesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesAPI.swift; sourceTree = "<group>"; };
+		CE1B79E924B04435008B4825 /* LeagueDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailsResponse.swift; sourceTree = "<group>"; };
 		E3B2B74D0C1C8F0516CA67D7 /* Pods-SportsDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsDB.debug.xcconfig"; path = "Target Support Files/Pods-SportsDB/Pods-SportsDB.debug.xcconfig"; sourceTree = "<group>"; };
 		F99EFF8666E230E1680D4B49 /* Pods-SportsDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsDB.release.xcconfig"; path = "Target Support Files/Pods-SportsDB/Pods-SportsDB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1B79E224B0179C008B4825 /* LeaguesResponse.swift */,
+				CE1B79E924B04435008B4825 /* LeagueDetailsResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			files = (
 				CE1B79CA24AECD94008B4825 /* DetailedLeaguesViewController.swift in Sources */,
 				CE1B79AE24AEC4A0008B4825 /* AppDelegate.swift in Sources */,
+				CE1B79EA24B04435008B4825 /* LeagueDetailsResponse.swift in Sources */,
 				CE1B79CF24AED171008B4825 /* LeagueTableViewCell.swift in Sources */,
 				CE1B79E324B0179C008B4825 /* LeaguesResponse.swift in Sources */,
 				CE1B79D724AEE8FF008B4825 /* LeagueDetails.swift in Sources */,

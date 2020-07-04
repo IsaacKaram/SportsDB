@@ -10,7 +10,7 @@ import Foundation
 
 protocol LeaguesAPIProtocol {
     func getLeagues(completion: @escaping (Result<LeaguesResponse?, Error>) -> Void)
-    func getLeagueDetailes(by id : String, completion: @escaping (Result<LeagueDetails?, Error>) -> Void)
+    func getLeagueDetailes(by id : String, completion: @escaping (Result<LeagueDetailsResponse?, Error>) -> Void)
 }
 
 
@@ -23,8 +23,8 @@ class LeaguesAPI: BaseAPI<LeaguesNetworking>, LeaguesAPIProtocol {
         }
     }
     
-    func getLeagueDetailes(by id: String, completion: @escaping (Result<LeagueDetails?, Error>) -> Void) {
-         self.fetchData(target: .getDetailedLeague(id: id), responseClass: LeagueDetails.self) { (result) in
+    func getLeagueDetailes(by id: String, completion: @escaping (Result<LeagueDetailsResponse?, Error>) -> Void) {
+         self.fetchData(target: .getDetailedLeague(id: id), responseClass: LeagueDetailsResponse.self) { (result) in
              completion(result)
          }
      }

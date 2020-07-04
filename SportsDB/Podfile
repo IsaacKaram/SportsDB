@@ -11,4 +11,6 @@ pod 'Alamofire', '~> 5.0'
 
 pod 'NVActivityIndicatorView'
 
+pod 'Kingfisher'
+
 end

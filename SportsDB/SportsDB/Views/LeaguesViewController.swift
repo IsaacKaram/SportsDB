@@ -17,18 +17,34 @@ class LeaguesViewController: UIViewController {
     private var leagues = [League]()
     private var filterdleagues = [League]()
     
+    //MARKS:- Outlets
     @IBOutlet weak var leaguesTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var activityIndicator: NVActivityIndicatorView!
     
+    private let myRefreshControl : UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshLeague), for: .valueChanged)
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        leaguesTableView.delegate = self
-        leaguesTableView.dataSource = self
+        setupView()
+        fetchLeagues()
+    }
+    
+    private func setupView(){
+        setuptableView()
         searchBar.delegate = self
         activityIndicator.type = .ballClipRotatePulse
+    }
+
+    private func setuptableView(){
+        leaguesTableView.delegate = self
+        leaguesTableView.dataSource = self
+        leaguesTableView.refreshControl = myRefreshControl
         registerCustomCells()
-        fetchLeagues()
     }
 
 }
@@ -37,6 +53,10 @@ class LeaguesViewController: UIViewController {
 extension LeaguesViewController{
     private func registerCustomCells() {
         leaguesTableView.register(UINib(nibName: leagueCellId, bundle: nil), forCellReuseIdentifier: leagueCellId)
+    }
+    
+    @objc func refreshLeague(){
+        fetchLeagues()
     }
     
     private func fetchLeagues(){
@@ -48,6 +68,7 @@ extension LeaguesViewController{
     
     private func hanleLeaguesListResponse(result :Result<LeaguesResponse?, Error>){
         activityIndicator.stopAnimating()
+        leaguesTableView.refreshControl?.endRefreshing()
         switch result {
         case .success(let leaguesList):
             if let leagues = leaguesList?.leagues {

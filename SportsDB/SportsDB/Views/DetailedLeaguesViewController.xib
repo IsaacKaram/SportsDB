@@ -11,6 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailedLeaguesViewController" customModule="SportsDB" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="Ul4-v6-DgT" id="nR0-bf-l6V"/>
+                <outlet property="leagueCountry" destination="2Oi-3s-1RN" id="2rA-oY-juF"/>
+                <outlet property="leagueDescription" destination="24M-li-F4H" id="scC-LU-7vK"/>
+                <outlet property="leagueLogo" destination="uvc-P9-LIH" id="aIx-x8-iOG"/>
+                <outlet property="leagueName" destination="Qoa-zf-gb2" id="HkB-jL-qxh"/>
+                <outlet property="sportType" destination="KAM-Wa-uAd" id="6sP-Z7-R4d"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,39 +27,40 @@
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uvc-P9-LIH">
                     <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="ebG-eJ-RJq"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoa-zf-gb2">
-                    <rect key="frame" x="20" y="364" width="374" height="22"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoa-zf-gb2">
+                    <rect key="frame" x="20" y="364" width="374" height="0.0"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAM-Wa-uAd">
-                    <rect key="frame" x="20" y="406" width="374" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAM-Wa-uAd">
+                    <rect key="frame" x="20" y="384" width="374" height="0.0"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oi-3s-1RN">
-                    <rect key="frame" x="20" y="446" width="374" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oi-3s-1RN">
+                    <rect key="frame" x="20" y="404" width="374" height="0.0"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLo-jY-tol">
-                    <rect key="frame" x="20" y="487" width="374" height="20"/>
+                    <rect key="frame" x="20" y="424" width="374" height="20"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gu-XV-1xD">
-                    <rect key="frame" x="20" y="527" width="374" height="335"/>
+                    <rect key="frame" x="20" y="464" width="374" height="398"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24M-li-F4H">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24M-li-F4H">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="0.0"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -68,6 +75,19 @@
                         <constraint firstItem="24M-li-F4H" firstAttribute="top" secondItem="7gu-XV-1xD" secondAttribute="top" id="sTM-Eb-TYe"/>
                     </constraints>
                 </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ul4-v6-DgT" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="182" y="423" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="euy-n9-Cno"/>
+                        <constraint firstAttribute="height" constant="50" id="noR-tB-Bht"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" name="LeagueAlternateName"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" name="ViewBackgoundColor"/>
             <constraints>
@@ -87,15 +107,20 @@
                 <constraint firstItem="7gu-XV-1xD" firstAttribute="top" secondItem="HLo-jY-tol" secondAttribute="bottom" constant="20" id="eJN-NI-mlr"/>
                 <constraint firstItem="2Oi-3s-1RN" firstAttribute="trailing" secondItem="Qoa-zf-gb2" secondAttribute="trailing" id="eYM-9h-Vx3"/>
                 <constraint firstItem="uvc-P9-LIH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fwQ-KO-Kpa"/>
+                <constraint firstItem="Ul4-v6-DgT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h2t-eQ-9cr"/>
                 <constraint firstItem="2Oi-3s-1RN" firstAttribute="top" secondItem="KAM-Wa-uAd" secondAttribute="bottom" constant="20" id="l8a-nE-ThO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7gu-XV-1xD" secondAttribute="bottom" id="mSf-E0-koT"/>
                 <constraint firstItem="HLo-jY-tol" firstAttribute="trailing" secondItem="Qoa-zf-gb2" secondAttribute="trailing" id="onn-x3-qRk"/>
+                <constraint firstItem="Ul4-v6-DgT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rbL-NY-D8c"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="LeagueAlternateName">
+            <color red="0.25099998712539673" green="0.45100000500679016" blue="0.62000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ViewBackgoundColor">
             <color red="0.96100002527236938" green="0.9649999737739563" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

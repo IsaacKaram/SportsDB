@@ -9,17 +9,19 @@
 import Foundation
 
 struct LeagueDetails : Decodable {
-    var leagueName : String
-    var leagueSport : String
-    var leagueCountry : String
-    var leagueLogoPath : String
-    var legueDescription : String
+    var leagueId : String
+    var leagueName : String?
+    var leagueSport : String?
+    var leagueCountry : String?
+    var leagueLogoPath : String?
+    var legueDescription : String?
     
     enum CodingKeys : String, CodingKey {
-        case leagueName = "StrLeagueasname"
-        case leagueSport = "StrSportassport"
-        case leagueCountry = "StrCountryascountry"
-        case leagueLogoPath = "StrLogoaslogoimage"
+        case leagueId = "idLeague"
+        case leagueName = "strLeague"
+        case leagueSport = "strSport"
+        case leagueCountry = "strCountry"
+        case leagueLogoPath = "strLogo"
         case legueDescription = "strDescriptionEN"
     }
 }
