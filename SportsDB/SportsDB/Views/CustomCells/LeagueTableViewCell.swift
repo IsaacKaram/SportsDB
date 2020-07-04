@@ -10,15 +10,21 @@ import UIKit
 
 class LeagueTableViewCell: UITableViewCell {
 
+    //MARK:- outlets
+    @IBOutlet weak var leagueNameLabel: UILabel!
+    @IBOutlet weak var sportTypeLabel: UILabel!
+    @IBOutlet weak var leagueShortNameLabel: UILabel!
+    @IBOutlet weak var customBackgroundView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        customBackgroundView.layer.cornerRadius = 10.0
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configureCell(leagueName : String, sportType : String, leagueShortName: String){
+        leagueNameLabel.text = leagueName
+        sportTypeLabel.text = sportType
+        leagueNameLabel.text = leagueShortName
     }
     
 }

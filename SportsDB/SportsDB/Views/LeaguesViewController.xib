@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeaguesViewController" customModule="SportsDB" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="1xx-lV-cum" id="6Qz-F8-lUs"/>
+                <outlet property="leaguesTableView" destination="bfP-bR-VDO" id="cHd-d0-rwh"/>
+                <outlet property="searchBar" destination="Hng-zL-phf" id="FQZ-3p-BPc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,6 +31,19 @@
                     <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xx-lV-cum" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="182" y="423" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NXD-Eu-Jir"/>
+                        <constraint firstAttribute="width" constant="50" id="fme-Dh-rxp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" name="LeagueAlternateName"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" name="ViewBackgoundColor"/>
             <constraints>
@@ -35,8 +51,10 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bfP-bR-VDO" secondAttribute="bottom" id="3iy-rz-mXp"/>
                 <constraint firstItem="Hng-zL-phf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Apj-9u-VSL"/>
                 <constraint firstItem="bfP-bR-VDO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Bb7-0w-pfX"/>
+                <constraint firstItem="1xx-lV-cum" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="N4e-y3-nx0"/>
                 <constraint firstItem="Hng-zL-phf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="STG-t9-VJX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bfP-bR-VDO" secondAttribute="trailing" id="Siz-r3-evk"/>
+                <constraint firstItem="1xx-lV-cum" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="p6Q-1P-Icw"/>
                 <constraint firstItem="Hng-zL-phf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yo1-79-9kn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -44,6 +62,9 @@
         </view>
     </objects>
     <resources>
+        <namedColor name="LeagueAlternateName">
+            <color red="0.25099998712539673" green="0.45100000500679016" blue="0.62000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ViewBackgoundColor">
             <color red="0.96100002527236938" green="0.9649999737739563" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

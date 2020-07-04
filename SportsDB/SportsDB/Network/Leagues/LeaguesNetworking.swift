@@ -18,7 +18,7 @@ extension LeaguesNetworking: TargetType {
     var baseURL: String {
         switch self {
         default:
-            return " https://www.thesportsdb.com/api/v1/json/1"
+            return "https://www.thesportsdb.com/api/v1/json/1"
         }
     }
     

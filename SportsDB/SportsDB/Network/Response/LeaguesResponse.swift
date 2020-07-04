@@ -9,5 +9,9 @@
 import Foundation
 
 struct LeaguesResponse : Decodable {
-    var leagues : [League]
+    var leagues : [League]?
+    
+    enum CodingKeys: String, CodingKey {
+        case leagues = "leagues"
+    }
 }

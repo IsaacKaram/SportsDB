@@ -10,9 +10,9 @@ import Foundation
 
 struct League : Decodable {
     var leagueId : String
-    var leagueName : String
-    var leagueSport : String
-    var leagueShortName : String
+    var leagueName : String?
+    var leagueSport : String?
+    var leagueShortName : String?
     
     enum CodingKeys : String, CodingKey {
         case leagueId = "idLeague"
