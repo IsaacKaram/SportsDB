@@ -58,6 +58,7 @@ extension DetailedLeaguesViewController{
                 let leagueDetails = leagues[0]
                 DispatchQueue.main.async {
                     self.leagueLogo.kf.setImage(with: URL(string: leagueDetails.leagueLogoPath!))
+                    self.title = leagueDetails.leagueName
                     self.leagueName.text = leagueDetails.leagueName
                     self.sportType.text = leagueDetails.leagueSport
                     self.leagueCountry.text = leagueDetails.leagueCountry

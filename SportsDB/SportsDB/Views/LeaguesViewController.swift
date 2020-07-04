@@ -36,6 +36,7 @@ class LeaguesViewController: UIViewController {
     
     private func setupView(){
         setuptableView()
+        title = "Leagues"
         searchBar.delegate = self
         activityIndicator.type = .ballClipRotatePulse
     }

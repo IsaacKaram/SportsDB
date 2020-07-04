@@ -35,19 +35,19 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoa-zf-gb2">
                     <rect key="frame" x="20" y="364" width="374" height="0.0"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" name="LeagueAlternateName"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAM-Wa-uAd">
                     <rect key="frame" x="20" y="384" width="374" height="0.0"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" name="SportType"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oi-3s-1RN">
                     <rect key="frame" x="20" y="404" width="374" height="0.0"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" name="SportType"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLo-jY-tol">
@@ -62,7 +62,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24M-li-F4H">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="0.0"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" name="SportType"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -113,6 +113,7 @@
                 <constraint firstItem="HLo-jY-tol" firstAttribute="trailing" secondItem="Qoa-zf-gb2" secondAttribute="trailing" id="onn-x3-qRk"/>
                 <constraint firstItem="Ul4-v6-DgT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rbL-NY-D8c"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
         </view>
@@ -121,8 +122,11 @@
         <namedColor name="LeagueAlternateName">
             <color red="0.25099998712539673" green="0.45100000500679016" blue="0.62000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="SportType">
+            <color red="0.098039215686274508" green="0.16470588235294117" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ViewBackgoundColor">
-            <color red="0.96100002527236938" green="0.9649999737739563" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.96078431372549022" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
